@@ -8,7 +8,11 @@ setup(
     long_description=open("pypi_readme.md", "r", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/GuanYixuan/pyJianYingDraft",
-    packages=find_packages(exclude=["tools", "tools.*", "ignored", "ignored.*"]),
+    packages=find_packages(exclude=[
+        "tools", "tools.*",
+        "ignored", "ignored.*",
+        "tests", "tests.*",
+    ]),
     package_data={
         'pyJianYingDraft': ['assets/*.json']
     },
